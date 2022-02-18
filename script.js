@@ -1,3 +1,6 @@
+
+
+
 document.getElementById('button-item').addEventListener('click', function () {
 
     const foodInput = document.getElementById('food-item');
@@ -28,6 +31,8 @@ document.getElementById('button-item').addEventListener('click', function () {
 
 
 
+
+
     //total balance calculation
 
 
@@ -42,47 +47,17 @@ document.getElementById('button-item').addEventListener('click', function () {
 })
 
 
-// document.getElementById('save-button').addEventListener('click', function () {
-
-//     // const moneyInput = document.getElementById('money-item');
-//     // const moneyAmount = moneyInput.value;
-
-//     const saveInput = document.getElementById('save-item');
-//     const saveAmount = saveInput.value;
-
-//     let updateV = parseInt(saveAmount);
-
-//     // let savingsAmount = (parseInt(moneyAmount) * parseInt(saveAmount)) / 100;
-
-//     // let savings = document.getElementById('saving-amount');
-//     // const savingsText = savings.innerText;
-//     // savings.innerText = saveInput.value;
-//     // console.log(savings.innerText);
+document.getElementById('save-button').addEventListener('click', function () {
 
 
-
-//     const saving = document.getElementById('saving-amount');
-//     const savesText = saving.innerText;
-//     saving.innerText = updateV;
-//     console.log(saving.innerText);
-// })
-
-document.getElementById('button-save').addEventListener('click', function () {
-    const saveInput = document.getElementById('save-item');
+    const saveInput = document.getElementById('saves-item');
     const saveAmount = saveInput.value;
 
 
+    let resultMoney = parseInt(saveAmount);
 
-
-    // const parsent = document.getElementById('savings-amount');
-    // const parsentText = parsent.innerText;
-    // parsent.innerText = parseInt(saveAmount);
-    // console.log(parsent.innerText);
-
-
-
-    const cal = document.getElementById('savings-amount');
-    const calText = cal.innerText;
-    cal.innerText = saveAmount;
-
+    const saving = document.getElementById('savings-amount');
+    const savingText = saving.innerText;
+    saving.innerText = resultMoney;
+    console.log(saving.innerText);
 })
