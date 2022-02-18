@@ -1,15 +1,17 @@
+/* css style part */
+
 .button{
     color: white;
     padding: 5px;
     width: 125px;
-    background-color: blueviolet;
+    background-color: rgb(70, 63, 138);
 
 }
 
 input{
-    background-color:rgb(231, 219, 221);
+    background-color:snow;
 }
 .photo{
     width: 500px;
-    height: 500px;
+    height: 520px;
 }
