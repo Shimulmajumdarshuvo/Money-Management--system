@@ -29,7 +29,7 @@ document.getElementById('button-item').addEventListener('click', function () {
 
 
     else if (isNaN(income) != '' || isNaN(foodItem) != '' || isNaN(rentitem) != '' || isNaN((clothesItem) != '')) {
-        alert('kgjkdfjghgkigk');
+        alert('Enter a valid input number not string');
 
     }
 
