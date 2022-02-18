@@ -1,5 +1,9 @@
 
+// function incomeRent(income) {
+//     const moneyInput = document.getElementById('money-item');
+//     const moneyAmount = moneyInput.value;
 
+// }
 
 document.getElementById('button-item').addEventListener('click', function () {
 
@@ -50,14 +54,31 @@ document.getElementById('button-item').addEventListener('click', function () {
 document.getElementById('save-button').addEventListener('click', function () {
 
 
+    const moneyInput = document.getElementById('money-item');
+    const moneyAmount = moneyInput.value;
+
     const saveInput = document.getElementById('saves-item');
     const saveAmount = saveInput.value;
 
 
-    let resultMoney = parseInt(saveAmount);
+    let resultMoney = (parseInt(moneyAmount) * parseInt(saveAmount)) / 100;
 
+    //updated savings balance
     const saving = document.getElementById('savings-amount');
     const savingText = saving.innerText;
     saving.innerText = resultMoney;
     console.log(saving.innerText);
+
+
+    const balanceTotal = document.getElementById('total-balance');
+    const balanceTotalText = balanceTotal.innerText;
+    const previousBalanceTotal = parseInt(balanceTotalText);
+
+
+    //updated remaining balance
+    const remaining = document.getElementById('remaining-amount');
+    const remainingText = remaining.innerText;
+    remaining.innerText = previousBalanceTotal - saving.innerText;
+
+
 })
