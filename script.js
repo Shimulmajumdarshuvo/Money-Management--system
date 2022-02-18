@@ -26,21 +26,27 @@ document.getElementById('button-item').addEventListener('click', function () {
         alert('Please enter the valid input!!!!');
 
     }
-    // else if (calculation > income) {
-    //     alert('Expences amount is bigger than income amount');
-    // }
+
+
+    else if (isNaN(income) != '' || isNaN(foodItem) != '' || isNaN(rentitem) != '' || isNaN((clothesItem) != '')) {
+        alert('kgjkdfjghgkigk');
+
+    }
+
     else {
 
         const calculation = foodItem + rentitem + clothesItem;
-
+        if (calculation > income) {
+            alert('Expences amount is bigger than income amount');
+        }
         document.getElementById('total-Expenses').innerText = calculation;
         document.getElementById('total-balance').innerText = income - calculation;
 
     }
-    // if (calculation > income) {
-    //     alert('Expences amount is bigger than income amount');
 
-    // }
+
+
+
 
 
 
